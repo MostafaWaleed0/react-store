@@ -10,12 +10,12 @@ import Contact from "../components/templates/Home/contact/Contact";
 export default function Home() {
   return (
     <Container>
-      {/* <Hero />
+      <Hero />
       <CardAdvantage />
       <SectionIdeas />
       <Product />
       <Opinions />
-      <Contact /> */}
+      <Contact />
     </Container>
   );
 }
