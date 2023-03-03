@@ -21,9 +21,9 @@ export default function Footer() {
         <FooterNav aria-label="secondary" tabIndex={-1}>
           <FooterImage>
             <Link href="/">
-              <a>
-                <Image src="/img/Asset.png" width={238} height={70} alt="" />
-              </a>
+
+              <Image src="/img/Asset.png" width={238} height={70} alt="" />
+
             </Link>
           </FooterImage>
           {data.map((item, index) => {
@@ -34,7 +34,7 @@ export default function Footer() {
                   {item.links.map((item, index) => {
                     return (
                       <Li key={index + 1}>
-                        <Link href={item.url}>
+                        <Link href={item.url} legacyBehavior>
                           <SLink href={item.url}>{item.name}</SLink>
                         </Link>
                       </Li>
