@@ -1,10 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { uiActions } from "../../app/slices/uiSlice";
-import storeIcon from "../../img/Bag_fill.png";
 import Nav from "./Nav/Nav";
 import Image from "next/image";
-import logo from "../../img/Asset.png";
 import { Wrapper } from "../../styles/util";
 import {
   SHeader,
@@ -28,11 +26,11 @@ export default function Header() {
       <Wrapper>
         <HeaderInner>
           <HeaderBrand>
-            <Image src={logo} width={119} height={35} alt="" />
+            <Image src="/img/Asset.png" width={119} height={35} alt="" />
           </HeaderBrand>
           <Nav menuOpen={menuOpen} />
           <div>
-            <Image src={storeIcon} width={24} height={24} alt="" />
+            <Image src="/img/Bag_fill.png" width={24} height={24} alt="" />
             <MenuToggleButton onClick={menuToggleHandler}>
               {menuOpen ? <MenuIcon /> : <CloseIcon />}
             </MenuToggleButton>

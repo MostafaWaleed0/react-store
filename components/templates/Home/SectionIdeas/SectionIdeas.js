@@ -13,7 +13,6 @@ import {
   IdeaLink,
   IdeaImg,
 } from "./styles";
-import img from "../../../../img/image-5.webp";
 import { Wrapper } from "../../../../styles/util";
 import Image from "next/image";
 import Link from "next/Link";
@@ -66,7 +65,7 @@ export default function SectionIdeas() {
             </Link>
           </article>
           <IdeaImg>
-            <Image src={img} alt="" width={870} height={600} />
+            <Image src="/img/image-5.webp" alt="" width={870} height={600} />
           </IdeaImg>
         </SectionIdeaInner>
       </Wrapper>

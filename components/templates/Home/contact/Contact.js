@@ -11,7 +11,6 @@ import {
 } from "./styles";
 import { IoIosArrowForward } from "react-icons/io";
 
-import img from "../../../../img/image-11.webp";
 import Image from "next/image";
 
 export default function Contact() {
@@ -19,7 +18,7 @@ export default function Contact() {
     <Wrapper>
       <ContactContainer>
         <Img>
-          <Image src={img} alt="" width={870} height={600} />
+          <Image src="/img/image-11.webp" alt="" width={870} height={600} />
         </Img>
         <article>
           <ContactTitle>Make your room feel homey</ContactTitle>

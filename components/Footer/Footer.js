@@ -1,6 +1,5 @@
 import React from "react";
 import { Wrapper } from "../../styles/util";
-import logo from "./../../img/Asset.png";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -23,7 +22,7 @@ export default function Footer() {
           <FooterImage>
             <Link href="/">
               <a>
-                <Image src={logo} width={238} height={70} alt="" />
+                <Image src="/img/Asset.png" width={238} height={70} alt="" />
               </a>
             </Link>
           </FooterImage>
